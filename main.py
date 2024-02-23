@@ -14,7 +14,7 @@ async def fetch_url(session, url, cookies, banned_profiles):
             banned_profiles.append(url.split('/')[-2])  # Extract username from URL
 
 async def main():
-    cookie_file = os.path.expanduser('~') + '\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\dul21l1q.default-release\\cookies.sqlite'
+    cookie_file = os.path.expanduser('~') + '\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\<user>.default-release\\cookies.sqlite'
     conn = sqlite3.connect(cookie_file)
     cursor = conn.cursor()
     
